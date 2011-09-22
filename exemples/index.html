@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>jQuery.waiting exemples</title>
+	<script src="jquery.min.js"></script>
+	<script src="../jquery.waiting.js"></script>
+</head>
+
+<body>
+	<h2>Source</h2>
+	<pre>
+$('#search').keyup(function(){
+	$(this).waiting(1000).done(function(){
+		$('#results > ul').append( $('&lt;li&gt;' + $(this).val() + '&lt;/li&gt;') );
+	});
+});
+	</pre>
+	
+	<h2>Result</h2>
+	Search the following text: <input type="text" id="search" />
+	<div id="results">
+		<ul>
+		</ul>
+	</div>
+	
+	<script>
+	$('#search').keyup(function(){
+		$(this).waiting(1000).done(function(){
+			$('#results > ul').append( $('<li>' + $(this).val() + '</li>') );
+		});
+	});
+	</script>
+
+</body>
+
+</html>
