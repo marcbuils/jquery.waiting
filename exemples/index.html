@@ -10,7 +10,7 @@
 	<h2>Source</h2>
 	<pre>
 $('#search').keyup(function(){
-	$(this).waiting(1000).done(function(){
+	$(this).waiting(500).done(function(){
 		$('#results > ul').append( $('&lt;li&gt;' + $(this).val() + '&lt;/li&gt;') );
 	});
 });
@@ -25,7 +25,7 @@ $('#search').keyup(function(){
 	
 	<script>
 	$('#search').keyup(function(){
-		$(this).waiting(1000).done(function(){
+		$(this).waiting(500).done(function(){
 			$('#results > ul').append( $('<li>' + $(this).val() + '</li>') );
 		});
 	});
