@@ -35,6 +35,42 @@
 
 <p>A plugin to wait fixed time since the last call only. </p>
 
+<p>Une documentation en français est disponible ici: <a href="http://www.marcbuils.fr/2012/10/jquerywaiting-timer-dattente-resette.html">http://www.marcbuils.fr/2012/10/jquerywaiting-timer-dattente-resette.html</a></p>
+
+<h2>Demo</h2>
+<h3>Sources</h3>
+<pre>
+Search the following text: &lt;input type="text" id="search" /&gt;
+	&lt;div id="results"&gt;
+		&lt;ul&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+$('#search').keyup(function(){
+	$(this).waiting(500).done(function(){
+		$('#results &gt; ul').append( $('&lt;li&gt;' + $(this).val() + '&lt;/li&gt;') );
+	});
+});
+&lt;/script&gt;
+</pre>
+
+<h3>Result</h3>
+Search the following text: <input type="text" id="search" />
+	<div id="results">
+		<ul>
+		</ul>
+	</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="javascripts/jquery.waiting.min.js"></script>
+<script>
+$('#search').keyup(function(){
+	$(this).waiting(500).done(function(){
+		$('#results > ul').append( $('<li>' + $(this).val() + '</li>') );
+	});
+});
+</script>
+
 <h2>Author</h2>
 
 <p>Marc Buils (<a href="http://www.marcbuils.fr">http://www.marcbuils.fr</a>)</p>
@@ -46,11 +82,7 @@
 <h2>Current Version</h2>
 
 <p>v0.1.0</p>
-
-<h2>Demo</h2>
-
-<p><a href="http://www.marcbuils.fr/2012/10/jquerywaiting-timer-dattente-resette.html">http://www.marcbuils.fr/2012/10/jquerywaiting-timer-dattente-resette.html</a></p>
-        </section>
+       </section>
 
         <footer>
           JQuery.waiting is maintained by <a href="https://github.com/marcbuils">marcbuils</a><br>
