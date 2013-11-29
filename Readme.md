@@ -8,4 +8,4 @@ Marc Buils (http://www.marcbuils.fr)
 v0.1.0
 
 ##Demo
-http://www.marcbuils.fr/2012/10/jquerywaiting-timer-dattente-resette.html
+http://blog.marcbuils.fr/2012/10/jquerywaiting-timer-dattente-resette.html
