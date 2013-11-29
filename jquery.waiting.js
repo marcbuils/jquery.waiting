@@ -11,7 +11,7 @@
  * - First release
  */
 (function($){
-$.fn.waiting = function( p_delay ){
+$.fn.waiting = function( p_delay, undefined ){
 	var $_this = this.first();
 	var _return = $.Deferred();
 	var _handle = null;
